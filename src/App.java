@@ -1,0 +1,84 @@
+import models.Person;
+import structures.trees.BinaryTree;
+import structures.trees.IntTree;
+public class App {
+
+    public static void main(String[] args) {
+
+        runIntTree();
+        runPersonTree();
+    }
+
+    private static void runIntTree() {
+
+        IntTree arbolNumeros = new IntTree();
+
+        arbolNumeros.insert(10);
+        arbolNumeros.insert(5);
+        arbolNumeros.insert(3);
+        arbolNumeros.insert(8);
+        arbolNumeros.insert(20);
+        arbolNumeros.insert(15);
+
+        System.out.println("Pre Order");
+        arbolNumeros.preOrder();
+
+        System.out.println();
+        System.out.println("Pos Order");
+        arbolNumeros.posOrder();
+        System.out.println("In Order");
+        arbolNumeros.inOrder();
+
+        System.out.println("\nNiveles");
+        arbolNumeros.niveles();
+
+        System.out.println("\nAltura");
+        System.out.println(arbolNumeros.altura());
+
+        System.out.println("\nPeso");
+        System.out.println(arbolNumeros.peso());
+
+        System.out.println("Nuevo");
+        System.out.println((arbolNumeros.getPeso()));
+
+    }
+    private static void runPersonTree(){
+        BinaryTree<Person> personTree = new BinaryTree<>();
+
+        System.out.println("======= Parte de la persona======");
+
+        personTree.insert(new Person("Alice", 30));
+        personTree.insert(new Person("Bob", 25));
+        personTree.insert(new Person("Diego", 35));
+        personTree.insert(new Person("Rafael", 35));
+        personTree.insert(new Person("Ana", 35));
+        
+        System.out.println("Pre Order");
+
+        personTree.preOrder();
+
+        System.out.println();
+
+        System.out.println("Pos Order");
+        personTree.posOrder();
+        
+        System.out.println("In Order");
+        personTree.inOrder();
+
+        System.out.println("\nNiveles");
+        personTree.niveles();
+
+        System.out.println("\nAltura");
+        System.out.println(personTree.altura());
+
+        System.out.println("\nPeso");
+        System.out.println(personTree.peso());
+
+        System.out.println("Nuevo");
+        System.out.println((personTree.getPeso()));
+
+    }
+
+
+
+}
