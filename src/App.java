@@ -1,4 +1,5 @@
 import models.Person;
+import structures.*;
 import structures.trees.BinaryTree;
 import structures.trees.IntTree;
 public class App {
@@ -7,6 +8,8 @@ public class App {
 
         runIntTree();
         runPersonTree();
+        runEjercicios();
+        runEjercicio2();
     }
 
     private static void runIntTree() {
@@ -51,7 +54,7 @@ public class App {
         personTree.insert(new Person("Bob", 25));
         personTree.insert(new Person("Diego", 35));
         personTree.insert(new Person("Rafael", 35));
-        personTree.insert(new Person("Ana", 35));
+        personTree.insert(new Person("Ana", 30));
         
         System.out.println("Pre Order");
 
@@ -61,7 +64,7 @@ public class App {
 
         System.out.println("Pos Order");
         personTree.posOrder();
-        
+
         System.out.println("In Order");
         personTree.inOrder();
 
@@ -78,7 +81,18 @@ public class App {
         System.out.println((personTree.getPeso()));
 
     }
+    private static void runEjercicios() {
+        Ejercicio1 ejercicio1 = new Ejercicio1();
+        int[] numeros = new int[] { 5, 3, 7, 2, 4, 6, 8};
+        ejercicio1.insert(numeros);
 
+    }
+    private static void runEjercicio2() {
+        Ejercicio2 ejercicio2 = new Ejercicio2();
+        int[] numeros = new int[] { 5, 3, 7, 2, 4, 6, 8};
+        ejercicio2.insert(numeros);
+
+    }
 
 
 }

@@ -92,9 +92,9 @@ public class BinaryTree<T extends Comparable<T>> {
         System.out.print(actual + " ");
     }
 
-        public void inOrder() {
-    inOrderRecursivo(root);
-}
+    public void inOrder() {
+        inOrderRecursivo(root);
+    }
 
     private void inOrderRecursivo(Node<T> actual) {
 
