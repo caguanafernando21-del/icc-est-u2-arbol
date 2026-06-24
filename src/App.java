@@ -1,3 +1,6 @@
+import collection.set.Sets;
+import java.util.Set;
+import models.Contacto;
 import models.Person;
 import structures.*;
 import structures.trees.BinaryTree;
@@ -6,13 +9,54 @@ public class App {
 
     public static void main(String[] args) {
 
-        runIntTree();
-        runPersonTree();
-        runEjercicios();
-        runEjercicio2();
-        runEjercicio3();
-        runEjercicio4();
+        //runIntTree();
+        //runPersonTree();
+       //runEjercicios();
+        //runEjercicio2();
+        //runEjercicio3();
+        //runEjercicio4();
+        runSets();
     }
+
+
+    private static void runSets(){
+        Sets sets = new Sets();
+        System.out.println("Hash  Set");
+        // no permitir repitidos
+        Set<String> hashSet = sets.construirHashSet();
+        System.out.println(hashSet);
+        System.out.println("Tamano: " + hashSet.size());
+        System.out.println(hashSet.contains("F"));
+
+        System.out.println("\n LinkedSet");
+        Set<String> linkedHashSet = sets.construirLinkedHashSet();
+        System.out.println(linkedHashSet);
+        System.out.println("Tamano: " + linkedHashSet.size());
+        System.out.println(linkedHashSet.contains("F"));
+
+
+         System.out.println("\n Tree");
+        Set<String> construirTreeSet = sets.construirTreeSet();
+        System.out.println(construirTreeSet);
+        System.out.println("Tamano: " + construirTreeSet.size());
+        System.out.println(construirTreeSet.contains("F"));
+
+        
+        System.out.println("\n Tree Comparar");
+        Set<Contacto> compaTree  = sets.construirTreeSetConComparador();
+        System.out.println(compaTree);
+        System.out.println("Tamano: " + compaTree.size());
+
+
+        System.out.println("\n Contacto hash");
+        Set<Contacto> hashSetCompa  = sets.construirHashSetContacto();
+        System.out.println(hashSetCompa);
+        System.out.println("Tamano: " + hashSetCompa.size());
+
+
+
+    }
+
 
     private static void runIntTree() {
 
