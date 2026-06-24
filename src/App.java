@@ -10,6 +10,8 @@ public class App {
         runPersonTree();
         runEjercicios();
         runEjercicio2();
+        runEjercicio3();
+        runEjercicio4();
     }
 
     private static void runIntTree() {
@@ -92,6 +94,19 @@ public class App {
         int[] numeros = new int[] { 5, 3, 7, 2, 4, 6, 8};
         ejercicio2.insert(numeros);
 
+    }
+
+    private static void runEjercicio3() {
+        Ejercicio3 ejercicio3 = new Ejercicio3();
+        int[] numeros = new int[] { 4, 2, 7, 1, 3, 6, 9 }; 
+        ejercicio3.insert(numeros);
+    }
+
+    private static void runEjercicio4(){
+        Ejercicio4 ejercicio4 = new Ejercicio4();
+        int[] numeros = {4, 2, 7, 1, 3, 8};
+        ejercicio4.insert(numeros);
+    
     }
 
 
