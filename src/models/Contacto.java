@@ -48,7 +48,7 @@ public class Contacto implements Comparable<Contacto>{
         result = prime * result + ((apellido == null) ? 0 : apellido.hashCode());
         result = prime * result + ((telefono == null) ? 0 : telefono.hashCode());
         return result;
-    }
+    }   
 
     @Override
     public boolean equals(Object obj) {

@@ -164,11 +164,6 @@ public class BinaryTree<T extends Comparable<T>> {
         int alturaDerecha = pesoRecursiva(actual.getRight());
         return (alturaDerecha + alturaIzquierda) + 1;
    
-    }
-    
-      
-      
-
-    
+    }    
 
 }

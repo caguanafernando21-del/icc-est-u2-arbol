@@ -1,3 +1,4 @@
+import collection.maps.Maps;
 import collection.set.Sets;
 import java.util.Set;
 import models.Contacto;
@@ -15,7 +16,17 @@ public class App {
         //runEjercicio2();
         //runEjercicio3();
         //runEjercicio4();
-        runSets();
+        //runSets();
+        runMap();
+    
+    }
+
+
+    private static void runMap() {
+        Maps maps = new Maps();
+        maps.construirHashMap();
+        maps.coLinkedHashMap();
+        maps.coTreeMap();
     }
 
 
